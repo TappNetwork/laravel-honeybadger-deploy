@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Tapp\LaravelHoneybadgerDeploy\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelHoneybadgerDeployCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-honeybadger-deploy';
 
     public $description = 'My command';
 

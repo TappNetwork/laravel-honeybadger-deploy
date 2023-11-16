@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "tapp/laravel-honeybadger-deploy",
+    "description": "A small command to notify Honeybadger.io of deployments",
     "keywords": [
-        ":vendor_name",
+        "Tapp",
         "laravel",
-        ":package_slug"
+        "laravel-honeybadger-deploy"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/tapp/laravel-honeybadger-deploy",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Steve Williamson",
+            "email": "steve@tappnetwork.com",
             "role": "Developer"
         }
     ],
@@ -35,19 +35,18 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Tapp\\LaravelHoneybadgerDeploy\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Tapp\\LaravelHoneybadgerDeploy\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-honeybadger-deploy --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Tapp\\LaravelHoneybadgerDeploy\\LaravelHoneybadgerDeployServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelHoneybadgerDeploy": "Tapp\\LaravelHoneybadgerDeploy\\Facades\\LaravelHoneybadgerDeploy"
             }
         }
     },
