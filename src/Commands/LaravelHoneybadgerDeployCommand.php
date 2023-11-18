@@ -15,6 +15,7 @@ class LaravelHoneybadgerDeployCommand extends Command
     {
         if (! config('honeybadger.api_key')) {
             $this->error('HONEYBADGER_API_KEY not set');
+
             return self::FAILURE;
         }
 
