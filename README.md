@@ -19,7 +19,7 @@ composer require tapp/laravel-honeybadger-deploy
 ## Usage
 
 ```bash
-php artisan honeybadger:deploy {?environment=} {?revision=} {?repository} {?local_username}
+php artisan honeybadger:deploy {?environment=} {?revision=sha} {?local_username=forge}
 ```
 
 ## Testing
