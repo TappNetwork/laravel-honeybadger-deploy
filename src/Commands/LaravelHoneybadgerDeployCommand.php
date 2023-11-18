@@ -20,7 +20,7 @@ class LaravelHoneybadgerDeployCommand extends Command
         }
 
         Http::get('https://api.honeybadger.io/v1/deploys', [
-            'api_key' => config('honeybadger-deploy.api_key'),
+            'api_key' => config('honeybadger.api_key'),
             'deploy' => [
                 'environment' => $this->option('environment'),
                 'local_username' => $this->option('local_user'),
