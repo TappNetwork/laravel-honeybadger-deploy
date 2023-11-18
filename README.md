@@ -16,19 +16,6 @@ You can install the package via composer:
 composer require tapp/laravel-honeybadger-deploy
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-honeybadger-deploy-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
 ```bash
