@@ -17,7 +17,6 @@ class LaravelHoneybadgerDeployServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-honeybadger-deploy')
-            ->hasConfigFile()
             ->hasCommand(LaravelHoneybadgerDeployCommand::class);
     }
 }
